@@ -1,4 +1,5 @@
-import { Code2, Cpu, ExternalLink, Send, Terminal } from "lucide-react";
+import { Code2, ExternalLink, Send, Terminal } from "lucide-react";
+import Image from "next/image";
 import { FaDatabase, FaGithub, FaLinkedin } from "react-icons/fa";
 import {
   SiC,
@@ -89,18 +90,25 @@ export default async function Home() {
               <FaGithub size={20} />
               GitHub
             </a>
-            <a href="#" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-3 bg-black/50 hover:bg-zinc-900 border border-blue-900/30 text-zinc-300 rounded-lg font-medium transition-all hover:scale-105 backdrop-blur-sm">
+            <a href="https://www.linkedin.com/in/luis-paulo-costa-neto-42521a352" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-black/50 hover:bg-zinc-900 border border-blue-900/30 text-zinc-300 rounded-lg font-medium transition-all hover:scale-105 backdrop-blur-sm">
               <FaLinkedin size={20} />
+              LinkedIn
             </a>
           </div>
         </div>
 
-        {/* Espaço para Foto/Avatar */}
+        {/* Foto do Perfil do GitHub */}
         <div className="relative">
           <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-cyan-600 rounded-full blur-md opacity-75"></div>
           <div className="relative w-48 h-48 md:w-64 md:h-64 bg-black rounded-full border-2 border-blue-900 flex items-center justify-center overflow-hidden">
-            <Cpu size={64} className="text-blue-500/50" />
-            {/*  lembrar de colocar um foto de perfil: <img src="/perfil.jpg" alt="Luis Paulo" className="w-full h-full object-cover" /> */}
+            <Image 
+              src="https://avatars.githubusercontent.com/u/222956614?s=400&u=feb8083682d1eed1748cf0a2cc025858b3b6d39a&v=4" 
+              alt="Luis Paulo Costa" 
+              width={256}
+              height={256}
+              unoptimized
+              className="w-full h-full object-cover" 
+            />
           </div>
         </div>
       </section>
