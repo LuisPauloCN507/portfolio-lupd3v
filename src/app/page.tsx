@@ -7,7 +7,6 @@ import {
   SiGit,
   SiGo,
   SiJavascript,
-  SiLinux,
   SiNextdotjs,
   SiNodedotjs,
   SiPython,
@@ -52,7 +51,6 @@ export default async function Home() {
     { name: 'C++', icon: <SiCplusplus size={18} className="text-[#00599C]" /> },
     { name: 'Go', icon: <SiGo size={18} className="text-[#00ADD8]" /> },
     { name: 'SQL', icon: <FaDatabase size={18} className="text-zinc-400" /> },
-    { name: 'Linux', icon: <SiLinux size={18} className="text-[#FCC624]" /> },
     { name: 'Git', icon: <SiGit size={18} className="text-[#F05032]" /> },
     { name: 'Tailwind', icon: <SiTailwindcss size={18} className="text-[#06B6D4]" /> }
   ];
