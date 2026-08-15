@@ -2,20 +2,27 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="fixed top-0 w-full border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md z-50">
+    <header className="fixed top-0 w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/10 shadow-sm">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo / Nome */}
-        <Link href="/" className="text-xl font-bold text-zinc-100 hover:text-blue-500 transition-colors">
-          Lupd3v<span className="text-blue-500">.</span>
+        
+        {/* Logo */}
+        <Link href="#inicio" className="text-white font-bold text-xl tracking-tighter hover:opacity-80 transition-opacity">
+          Lup<span className="text-cyan-400">d3v</span>
         </Link>
         
-        {/* Navegação Desktop */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-          <Link href="#inicio" className="hover:text-zinc-100 transition-colors">Início</Link>
-          <Link href="#sobre" className="hover:text-zinc-100 transition-colors">Sobre Mim</Link>
-          <Link href="#projetos" className="hover:text-zinc-100 transition-colors">Projetos</Link>
-          <Link href="#contato" className="hover:text-zinc-100 transition-colors">Contato</Link>
+        {/* Navegação */}
+        <nav className="hidden md:flex gap-8 text-sm font-medium text-zinc-300">
+          <a href="#inicio" className="hover:text-cyan-400 transition-colors">Início</a>
+          <a href="#sobre" className="hover:text-cyan-400 transition-colors">Sobre Mim</a>
+          <a href="#projetos" className="hover:text-cyan-400 transition-colors">Projetos</a>
         </nav>
+
+        {/* Menu Mobile */}
+        <nav className="flex md:hidden gap-4 text-xs font-medium text-zinc-300">
+          <a href="#sobre" className="hover:text-cyan-400 transition-colors">Sobre</a>
+          <a href="#projetos" className="hover:text-cyan-400 transition-colors">Projetos</a>
+        </nav>
+
       </div>
     </header>
   );
