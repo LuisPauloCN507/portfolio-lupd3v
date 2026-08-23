@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      {/* AQUI: Adicionámos o overflow-x-hidden ao body para esconder apenas a barra horizontal globalmente */}
+      {/* AQUI: Adicionei o overflow-x-hidden ao body para esconder apenas a barra horizontal globalmente */}
       <body className="bg-[#020617] text-white antialiased overflow-x-hidden">
         <Header />
         {children}

@@ -15,7 +15,7 @@ import {
   SiTypescript
 } from "react-icons/si";
 
-// Importamos o nosso novo botão interativo!
+// Importei o novo botão interativo!
 import { CopyEmailButton } from "@/components/CopyEmailButton";
 
 interface Repo {
@@ -78,7 +78,7 @@ export default async function Home() {
             
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/90 text-sm mb-6 backdrop-blur-md shadow-lg">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>
-              Disponível para novos projetos
+              Online
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
@@ -103,7 +103,7 @@ export default async function Home() {
                 LinkedIn
               </a>
               
-              {/* O nosso novo botão de E-mail entra aqui */}
+              {/* O botão de E-mail entra aqui */}
               <CopyEmailButton />
             </div>
           </div>
@@ -142,7 +142,7 @@ export default async function Home() {
               
               <div className="p-6 font-mono text-sm leading-relaxed">
                 <div className="flex gap-2">
-                  <span className="text-cyan-400 font-bold">┌──(lupd3v㉿ubuntu)-[~/portfolio]</span>
+                  <span className="text-cyan-400 font-bold">┌──(lupd3v㉿arch)-[~/portfolio]</span>
                 </div>
                 <div className="flex gap-2 mb-4">
                   <span className="text-cyan-400 font-bold">└─$</span>
@@ -154,7 +154,7 @@ export default async function Home() {
                 </p>
 
                 <div className="flex gap-2 mt-6">
-                  <span className="text-cyan-400 font-bold">┌──(lupd3v㉿ubuntu)-[~/portfolio]</span>
+                  <span className="text-cyan-400 font-bold">┌──(lupd3v㉿arch)-[~/portfolio]</span>
                 </div>
                 <div className="flex gap-2">
                   <span className="text-cyan-400 font-bold">└─$</span>
