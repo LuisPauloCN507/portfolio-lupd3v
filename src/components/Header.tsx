@@ -7,7 +7,7 @@ export function Header() {
         
         {/* Logo */}
         <Link href="#inicio" className="text-white font-bold text-xl tracking-tighter hover:opacity-80 transition-opacity">
-          Lup<span className="text-cyan-400">d3v</span>
+          LuisPaulo<span className="text-cyan-400">CN507</span>
         </Link>
         
         {/* Navegação */}

@@ -1,11 +1,12 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
 import type { Metadata } from "next";
-import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { CustomCursor } from "@/components/CustomCursor";
+import "./globals.css"; // Mantém a importação de CSS como estava
 
 export const metadata: Metadata = {
-  title: "Luis Paulo | Front-End Developer",
-  description: "Portfólio de Luis Paulo, Desenvolvedor Front-End.",
+  title: "Luis Paulo | Desenvolvedor Full-Stack",
+  description: "Portfólio de Luis Paulo, Desenvolvedor Full-Stack.",
 };
 
 export default function RootLayout({
@@ -15,11 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      {/* AQUI: Adicionei o overflow-x-hidden ao body para esconder apenas a barra horizontal globalmente */}
       <body className="bg-[#020617] text-white antialiased overflow-x-hidden">
-        <Header />
+        {/* Adicionar o Cursor AQUI */}
+        <CustomCursor/>
+        
+        <Header/>
         {children}
-        <Footer />
+        <Footer/>
       </body>
     </html>
   );
