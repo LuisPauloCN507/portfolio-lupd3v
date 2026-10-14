@@ -47,7 +47,7 @@ const featuredProjects = [
       "Gerenciamento de estados complexos (player, sintonia, controle de volume) com React hooks."
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Integração de APIs"],
-    liveUrl: "https://radioarch.vercel.app/",
+    liveUrl: "https://radio-arch-beige.vercel.app/",
     repoUrl: "https://github.com/LuisPauloCN507/radioarch",
     visualText: "RADIOARCH"
   }
@@ -99,8 +99,8 @@ export default async function Home() {
   const repos = await getRepos();
 
   const linksDeDeploy: Record<string, string> = {
-    'radio-arch': 'https://radioarch.vercel.app/',
-    'radioarch': 'https://radioarch.vercel.app/',
+    'radio-arch': 'https://radio-arch-beige.vercel.app/',
+    'radioarch': 'https://radio-arch-beige.vercel.app/',
   };
 
   return (
