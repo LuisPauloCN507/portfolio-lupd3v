@@ -140,7 +140,7 @@ export default async function Home() {
                 </a>
                 
                 <a 
-                  href="/Curriculo_Dev.pdf" 
+                  href="/curriculo.pdf" 
                   download="Luis_Paulo_Curriculo.pdf"
                   className="flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-xl font-medium transition-transform duration-300 hover:scale-105 backdrop-blur-md"
                 >
